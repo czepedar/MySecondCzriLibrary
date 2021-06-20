@@ -1,0 +1,6 @@
+framework module MySecondCzriLibrary {
+  umbrella header "MySecondCzriLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

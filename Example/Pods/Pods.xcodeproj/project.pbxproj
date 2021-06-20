@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		536F095E267FE4D500D3ABB4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F095B267FE4D500D3ABB4 /* Client.swift */; };
+		536F095F267FE4D500D3ABB4 /* NetworkGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F095C267FE4D500D3ABB4 /* NetworkGeneric.swift */; };
+		536F0960267FE4D500D3ABB4 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F095D267FE4D500D3ABB4 /* ApiError.swift */; };
+		579A89E1030135F7AB4EA75F0B2B3217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		586A48254AE4CCB0BD1D7FA914FD9F34 /* Pods-MySecondCzriLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01394F4EDAEAA7FD6220F995A2AA2DFE /* Pods-MySecondCzriLibrary_Example-dummy.m */; };
+		5F8538DCF71E50D47A36576761B8E182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		768BC67D280E31F79DD391EFB4E4D89A /* Pods-MySecondCzriLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CA3B1070E27104A8E5FF11F7223BA2 /* Pods-MySecondCzriLibrary_Tests-dummy.m */; };
+		79B1E7DA1E167FFF0D3F0F30C3DE4961 /* MySecondCzriLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB093FF471C2F8FC99287A02211F26F /* MySecondCzriLibrary-dummy.m */; };
+		A0912173EFBED11C445A331D275BA27D /* Pods-MySecondCzriLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 710629CA27085E3F96A9AAF9626EA7A4 /* Pods-MySecondCzriLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9377D049504F0F7ADC7BE848B4CC25 /* Pods-MySecondCzriLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D2D0ED139E1DE570873798E55CD6CD /* Pods-MySecondCzriLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3E8D94AA83DCCC8BF14A5F1F42A61D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E82CB0AF28C272EFD5C21F9A1B695C6C /* MySecondCzriLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D368749995E8D29029B7DD00AB5F30B6 /* MySecondCzriLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C93D071ED375403A9EAB88D58542DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C239D6E63549931A9B39C279047DD9;
+			remoteInfo = MySecondCzriLibrary;
+		};
+		4BC8ACCE5E8A34F3A77A9CC1AA527040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE730D5F9A236A9AAAA810BD4143DFA;
+			remoteInfo = "Pods-MySecondCzriLibrary_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01394F4EDAEAA7FD6220F995A2AA2DFE /* Pods-MySecondCzriLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MySecondCzriLibrary_Example-dummy.m"; sourceTree = "<group>"; };
+		23CA3B1070E27104A8E5FF11F7223BA2 /* Pods-MySecondCzriLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MySecondCzriLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
+		25E045B5D9A42AFA8F73FF8FF2922DD3 /* Pods_MySecondCzriLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySecondCzriLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329CF7322495A9C20E8E9673FE2D9F2A /* Pods-MySecondCzriLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySecondCzriLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		355977AF180B81843D646E88AB209AAA /* Pods-MySecondCzriLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySecondCzriLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		36D2D0ED139E1DE570873798E55CD6CD /* Pods-MySecondCzriLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MySecondCzriLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
+		39E0BA04F8058EC2287400EA59C12D87 /* Pods-MySecondCzriLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySecondCzriLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CBCF80EF8824A3DEABE0F2C3AE0EF49 /* Pods-MySecondCzriLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySecondCzriLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		536F095B267FE4D500D3ABB4 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		536F095C267FE4D500D3ABB4 /* NetworkGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkGeneric.swift; sourceTree = "<group>"; };
+		536F095D267FE4D500D3ABB4 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		58903E1448F488AA9DFE0C93B940E5EF /* MySecondCzriLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MySecondCzriLibrary.debug.xcconfig; sourceTree = "<group>"; };
+		6138E3F2DF4B0555F7C29F22EF647CE6 /* MySecondCzriLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MySecondCzriLibrary-Info.plist"; sourceTree = "<group>"; };
+		6CB093FF471C2F8FC99287A02211F26F /* MySecondCzriLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MySecondCzriLibrary-dummy.m"; sourceTree = "<group>"; };
+		6D3DB87E6F63E47E79D157D072EA1075 /* MySecondCzriLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySecondCzriLibrary-prefix.pch"; sourceTree = "<group>"; };
+		710629CA27085E3F96A9AAF9626EA7A4 /* Pods-MySecondCzriLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MySecondCzriLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B1BE2037DE742D10E8569592769DE8E /* Pods-MySecondCzriLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySecondCzriLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF6216F32FD40AD171C69F0A060D6C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A4C8439C3E54F6C3214EB3AA9CF12B9C /* Pods-MySecondCzriLibrary_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySecondCzriLibrary_Example-Info.plist"; sourceTree = "<group>"; };
+		ADBA5C978AB3EB9057E872F2E752C8CC /* Pods-MySecondCzriLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MySecondCzriLibrary_Example.modulemap"; sourceTree = "<group>"; };
+		B56A8915F32FA3735CF06D0706ABA663 /* MySecondCzriLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySecondCzriLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F99F11773351DC60BAB078FAD8B26D /* MySecondCzriLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MySecondCzriLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1D96BF25721890967A542E034F70DE6 /* MySecondCzriLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MySecondCzriLibrary.release.xcconfig; sourceTree = "<group>"; };
+		C9394FBAB7BBB7ADE0DFC432B3CF7977 /* Pods_MySecondCzriLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySecondCzriLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6E1BA1C5600E505E42114F5037C181 /* Pods-MySecondCzriLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MySecondCzriLibrary_Tests.modulemap"; sourceTree = "<group>"; };
+		D368749995E8D29029B7DD00AB5F30B6 /* MySecondCzriLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySecondCzriLibrary-umbrella.h"; sourceTree = "<group>"; };
+		D7892A982C4DC43E3DAD266C126AC678 /* Pods-MySecondCzriLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySecondCzriLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DADAA0B1CC92541F894F80752023C812 /* Pods-MySecondCzriLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySecondCzriLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF6F4E7DAAFC41EA06F3E66BDDF9326B /* Pods-MySecondCzriLibrary_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySecondCzriLibrary_Tests-Info.plist"; sourceTree = "<group>"; };
+		E8134DF6ABE6E1138CB31B4896F5FBD9 /* MySecondCzriLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MySecondCzriLibrary.modulemap; sourceTree = "<group>"; };
+		EDBA8991263C8A9794E5DF5B39C28472 /* Pods-MySecondCzriLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySecondCzriLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F20380778FC9BEA55C82B94066197FA0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FFAB52A641503841D8DA1484CED91168 /* Pods-MySecondCzriLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MySecondCzriLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		291DCA0C417D42E08A2D66D125C4B688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E8D94AA83DCCC8BF14A5F1F42A61D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2932525550301E62FA85BC123B3A49F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579A89E1030135F7AB4EA75F0B2B3217 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1D5740BC397BE3066415744D505876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8538DCF71E50D47A36576761B8E182 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C5295FDA171703D1564BDB777DECCBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8134DF6ABE6E1138CB31B4896F5FBD9 /* MySecondCzriLibrary.modulemap */,
+				6CB093FF471C2F8FC99287A02211F26F /* MySecondCzriLibrary-dummy.m */,
+				6138E3F2DF4B0555F7C29F22EF647CE6 /* MySecondCzriLibrary-Info.plist */,
+				6D3DB87E6F63E47E79D157D072EA1075 /* MySecondCzriLibrary-prefix.pch */,
+				D368749995E8D29029B7DD00AB5F30B6 /* MySecondCzriLibrary-umbrella.h */,
+				58903E1448F488AA9DFE0C93B940E5EF /* MySecondCzriLibrary.debug.xcconfig */,
+				C1D96BF25721890967A542E034F70DE6 /* MySecondCzriLibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MySecondCzriLibrary";
+			sourceTree = "<group>";
+		};
+		0D801D54EF31E0ABB282E895F45444FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56A8915F32FA3735CF06D0706ABA663 /* MySecondCzriLibrary.framework */,
+				C9394FBAB7BBB7ADE0DFC432B3CF7977 /* Pods_MySecondCzriLibrary_Example.framework */,
+				25E045B5D9A42AFA8F73FF8FF2922DD3 /* Pods_MySecondCzriLibrary_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20CD658F2ADFDE713E6EC2C596B2E6A4 /* MySecondCzriLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				536F095A267FE39600D3ABB4 /* Network */,
+				3DB687F89F4D6CFE471CDD4AD8279CDA /* Pod */,
+				0C5295FDA171703D1564BDB777DECCBD /* Support Files */,
+			);
+			name = MySecondCzriLibrary;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3DB687F89F4D6CFE471CDD4AD8279CDA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F20380778FC9BEA55C82B94066197FA0 /* LICENSE */,
+				B7F99F11773351DC60BAB078FAD8B26D /* MySecondCzriLibrary.podspec */,
+				9DF6216F32FD40AD171C69F0A060D6C6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		536F095A267FE39600D3ABB4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				536F095D267FE4D500D3ABB4 /* ApiError.swift */,
+				536F095B267FE4D500D3ABB4 /* Client.swift */,
+				536F095C267FE4D500D3ABB4 /* NetworkGeneric.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B167AF9F77DB0779C3BEE16484AE915E /* Pods-MySecondCzriLibrary_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E1BA1C5600E505E42114F5037C181 /* Pods-MySecondCzriLibrary_Tests.modulemap */,
+				DADAA0B1CC92541F894F80752023C812 /* Pods-MySecondCzriLibrary_Tests-acknowledgements.markdown */,
+				39E0BA04F8058EC2287400EA59C12D87 /* Pods-MySecondCzriLibrary_Tests-acknowledgements.plist */,
+				23CA3B1070E27104A8E5FF11F7223BA2 /* Pods-MySecondCzriLibrary_Tests-dummy.m */,
+				DF6F4E7DAAFC41EA06F3E66BDDF9326B /* Pods-MySecondCzriLibrary_Tests-Info.plist */,
+				710629CA27085E3F96A9AAF9626EA7A4 /* Pods-MySecondCzriLibrary_Tests-umbrella.h */,
+				355977AF180B81843D646E88AB209AAA /* Pods-MySecondCzriLibrary_Tests.debug.xcconfig */,
+				7B1BE2037DE742D10E8569592769DE8E /* Pods-MySecondCzriLibrary_Tests.release.xcconfig */,
+			);
+			name = "Pods-MySecondCzriLibrary_Tests";
+			path = "Target Support Files/Pods-MySecondCzriLibrary_Tests";
+			sourceTree = "<group>";
+		};
+		C509A6908A3AA27589A870B3CD184B71 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD90C90D6BBBFEEE57B662B104E0D505 /* Pods-MySecondCzriLibrary_Example */,
+				B167AF9F77DB0779C3BEE16484AE915E /* Pods-MySecondCzriLibrary_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CD90C90D6BBBFEEE57B662B104E0D505 /* Pods-MySecondCzriLibrary_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ADBA5C978AB3EB9057E872F2E752C8CC /* Pods-MySecondCzriLibrary_Example.modulemap */,
+				3CBCF80EF8824A3DEABE0F2C3AE0EF49 /* Pods-MySecondCzriLibrary_Example-acknowledgements.markdown */,
+				329CF7322495A9C20E8E9673FE2D9F2A /* Pods-MySecondCzriLibrary_Example-acknowledgements.plist */,
+				01394F4EDAEAA7FD6220F995A2AA2DFE /* Pods-MySecondCzriLibrary_Example-dummy.m */,
+				FFAB52A641503841D8DA1484CED91168 /* Pods-MySecondCzriLibrary_Example-frameworks.sh */,
+				A4C8439C3E54F6C3214EB3AA9CF12B9C /* Pods-MySecondCzriLibrary_Example-Info.plist */,
+				36D2D0ED139E1DE570873798E55CD6CD /* Pods-MySecondCzriLibrary_Example-umbrella.h */,
+				EDBA8991263C8A9794E5DF5B39C28472 /* Pods-MySecondCzriLibrary_Example.debug.xcconfig */,
+				D7892A982C4DC43E3DAD266C126AC678 /* Pods-MySecondCzriLibrary_Example.release.xcconfig */,
+			);
+			name = "Pods-MySecondCzriLibrary_Example";
+			path = "Target Support Files/Pods-MySecondCzriLibrary_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E6AE7B7A3E0F2B775EF9452A57FC7211 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0D801D54EF31E0ABB282E895F45444FE /* Products */,
+				C509A6908A3AA27589A870B3CD184B71 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6AE7B7A3E0F2B775EF9452A57FC7211 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20CD658F2ADFDE713E6EC2C596B2E6A4 /* MySecondCzriLibrary */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0262A0D683D7F467341E40905EBD1C98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82CB0AF28C272EFD5C21F9A1B695C6C /* MySecondCzriLibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3EFEB110381C8E3D49D4FBD6BB8B36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9377D049504F0F7ADC7BE848B4CC25 /* Pods-MySecondCzriLibrary_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB01611A0A4AA280946221A7ED1BCF63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0912173EFBED11C445A331D275BA27D /* Pods-MySecondCzriLibrary_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45C239D6E63549931A9B39C279047DD9 /* MySecondCzriLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E86008DBD5D1C2AB2C5484150EAD08E /* Build configuration list for PBXNativeTarget "MySecondCzriLibrary" */;
+			buildPhases = (
+				0262A0D683D7F467341E40905EBD1C98 /* Headers */,
+				AD9CA7C55DAE46B387BE9BAEF6271F2B /* Sources */,
+				291DCA0C417D42E08A2D66D125C4B688 /* Frameworks */,
+				DE4778D600CDED452737C6BD7B72D452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySecondCzriLibrary;
+			productName = MySecondCzriLibrary;
+			productReference = B56A8915F32FA3735CF06D0706ABA663 /* MySecondCzriLibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68F1DF5B077F83A38702286256F554CB /* Pods-MySecondCzriLibrary_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E5E7C44531C0DA3403A08D7559AE3C /* Build configuration list for PBXNativeTarget "Pods-MySecondCzriLibrary_Tests" */;
+			buildPhases = (
+				DB01611A0A4AA280946221A7ED1BCF63 /* Headers */,
+				D91D0067C97DED641D1F3535DA02B2C4 /* Sources */,
+				2932525550301E62FA85BC123B3A49F9 /* Frameworks */,
+				06F81A55703885AEDF16D88A072ED657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B716AC117C4D2E8D28C4E8DBFA118088 /* PBXTargetDependency */,
+			);
+			name = "Pods-MySecondCzriLibrary_Tests";
+			productName = "Pods-MySecondCzriLibrary_Tests";
+			productReference = 25E045B5D9A42AFA8F73FF8FF2922DD3 /* Pods_MySecondCzriLibrary_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AE730D5F9A236A9AAAA810BD4143DFA /* Pods-MySecondCzriLibrary_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E597C0B8B9BC9F038393221623DB2C9C /* Build configuration list for PBXNativeTarget "Pods-MySecondCzriLibrary_Example" */;
+			buildPhases = (
+				5F3EFEB110381C8E3D49D4FBD6BB8B36 /* Headers */,
+				D79153AAE5BDA63674176D6D30F1F10A /* Sources */,
+				DF1D5740BC397BE3066415744D505876 /* Frameworks */,
+				8A038CC33A01925CD8B47CC219AA9DF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				069AAD79B49AE4D42491BBEA8528066F /* PBXTargetDependency */,
+			);
+			name = "Pods-MySecondCzriLibrary_Example";
+			productName = "Pods-MySecondCzriLibrary_Example";
+			productReference = C9394FBAB7BBB7ADE0DFC432B3CF7977 /* Pods_MySecondCzriLibrary_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					45C239D6E63549931A9B39C279047DD9 = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0D801D54EF31E0ABB282E895F45444FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45C239D6E63549931A9B39C279047DD9 /* MySecondCzriLibrary */,
+				7AE730D5F9A236A9AAAA810BD4143DFA /* Pods-MySecondCzriLibrary_Example */,
+				68F1DF5B077F83A38702286256F554CB /* Pods-MySecondCzriLibrary_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06F81A55703885AEDF16D88A072ED657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A038CC33A01925CD8B47CC219AA9DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4778D600CDED452737C6BD7B72D452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD9CA7C55DAE46B387BE9BAEF6271F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536F095E267FE4D500D3ABB4 /* Client.swift in Sources */,
+				536F0960267FE4D500D3ABB4 /* ApiError.swift in Sources */,
+				536F095F267FE4D500D3ABB4 /* NetworkGeneric.swift in Sources */,
+				79B1E7DA1E167FFF0D3F0F30C3DE4961 /* MySecondCzriLibrary-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79153AAE5BDA63674176D6D30F1F10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586A48254AE4CCB0BD1D7FA914FD9F34 /* Pods-MySecondCzriLibrary_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D91D0067C97DED641D1F3535DA02B2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768BC67D280E31F79DD391EFB4E4D89A /* Pods-MySecondCzriLibrary_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		069AAD79B49AE4D42491BBEA8528066F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MySecondCzriLibrary;
+			target = 45C239D6E63549931A9B39C279047DD9 /* MySecondCzriLibrary */;
+			targetProxy = 19C93D071ED375403A9EAB88D58542DF /* PBXContainerItemProxy */;
+		};
+		B716AC117C4D2E8D28C4E8DBFA118088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MySecondCzriLibrary_Example";
+			target = 7AE730D5F9A236A9AAAA810BD4143DFA /* Pods-MySecondCzriLibrary_Example */;
+			targetProxy = 4BC8ACCE5E8A34F3A77A9CC1AA527040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		437459812A5FCEB67E15A0BBEE6079BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBA8991263C8A9794E5DF5B39C28472 /* Pods-MySecondCzriLibrary_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Example/Pods-MySecondCzriLibrary_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Example/Pods-MySecondCzriLibrary_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		726678BCD7773B6534DAAF8F37734D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355977AF180B81843D646E88AB209AAA /* Pods-MySecondCzriLibrary_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Tests/Pods-MySecondCzriLibrary_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Tests/Pods-MySecondCzriLibrary_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92C25B78757A8D797F48C364225E9E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7892A982C4DC43E3DAD266C126AC678 /* Pods-MySecondCzriLibrary_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Example/Pods-MySecondCzriLibrary_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Example/Pods-MySecondCzriLibrary_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A9D313725323C41B0513E554C2F9193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1BE2037DE742D10E8569592769DE8E /* Pods-MySecondCzriLibrary_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Tests/Pods-MySecondCzriLibrary_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MySecondCzriLibrary_Tests/Pods-MySecondCzriLibrary_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADC123558F24FB0B1A2AC8D5E76149FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58903E1448F488AA9DFE0C93B940E5EF /* MySecondCzriLibrary.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary.modulemap";
+				PRODUCT_MODULE_NAME = MySecondCzriLibrary;
+				PRODUCT_NAME = MySecondCzriLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F5FDDDFF952982DC57C1B05F0C86A916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D96BF25721890967A542E034F70DE6 /* MySecondCzriLibrary.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MySecondCzriLibrary/MySecondCzriLibrary.modulemap";
+				PRODUCT_MODULE_NAME = MySecondCzriLibrary;
+				PRODUCT_NAME = MySecondCzriLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E5E7C44531C0DA3403A08D7559AE3C /* Build configuration list for PBXNativeTarget "Pods-MySecondCzriLibrary_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				726678BCD7773B6534DAAF8F37734D72 /* Debug */,
+				9A9D313725323C41B0513E554C2F9193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E86008DBD5D1C2AB2C5484150EAD08E /* Build configuration list for PBXNativeTarget "MySecondCzriLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC123558F24FB0B1A2AC8D5E76149FE /* Debug */,
+				F5FDDDFF952982DC57C1B05F0C86A916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E597C0B8B9BC9F038393221623DB2C9C /* Build configuration list for PBXNativeTarget "Pods-MySecondCzriLibrary_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437459812A5FCEB67E15A0BBEE6079BF /* Debug */,
+				92C25B78757A8D797F48C364225E9E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

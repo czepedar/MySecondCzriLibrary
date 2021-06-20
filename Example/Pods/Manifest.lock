@@ -1,0 +1,16 @@
+PODS:
+  - MySecondCzriLibrary (0.1.0)
+
+DEPENDENCIES:
+  - MySecondCzriLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  MySecondCzriLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MySecondCzriLibrary: bac3e1bf5e33b7f3db5f43374364297ccbdc5741
+
+PODFILE CHECKSUM: c3f584a5fe34308eba770524d5f4e0c8bcbc23ee
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module Pods_MySecondCzriLibrary_Example {
+  umbrella header "Pods-MySecondCzriLibrary_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
